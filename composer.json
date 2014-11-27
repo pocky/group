@@ -1,0 +1,33 @@
+{
+    "name": "black/group",
+    "type": "library",
+    "description": "Group library for Black projects",
+    "keywords": ["libary", "black-project", "group"],
+    "homepage": "http://www.lablackroom.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre 'pocky' Balmes",
+            "email": "alexandre@lablackroom.com",
+            "homepage": "http://www.lablackroom.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Black\\Component\\Group\\": "src/Black/Component/Group/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "monolog/monolog": "~1.10",
+        "symfony/event-dispatcher": "~2.5",
+        "symfony/http-kernel": "~2.5",
+        "black/common": "~1.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
